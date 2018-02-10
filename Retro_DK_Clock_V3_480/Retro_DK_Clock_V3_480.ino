@@ -2914,12 +2914,14 @@ void drawMario(int x, int y, int image, int cdir, int prevdir) { // Draw Mario f
       myGLCD.drawBitmap (408, 150, 34, 17, DK_scaffold); //   Scaffold above ladder 3
       myGLCD.drawBitmap (419, 167, 15, 22, Ladder1); // ladder 3 Top rung
       myGLCD.drawBitmap (419, 173, 15, 22, Ladder1); // ladder 3 bottom rungs
+      myGLCD.drawBitmap (408, 195, 34, 17, DK_scaffold); //   Scaffold below ladder 3
     }
 
    if (x == 392 && y == 170) { // Bottom Left of Ladder 3
       myGLCD.drawBitmap (408, 150, 34, 17, DK_scaffold); //   Scaffold above ladder 3
       myGLCD.drawBitmap (419, 167, 15, 22, Ladder1); // ladder 3 Top rung
       myGLCD.drawBitmap (419, 173, 15, 22, Ladder1); // ladder 3 bottom rungs
+      myGLCD.drawBitmap (408, 195, 34, 17, DK_scaffold); //   Scaffold below ladder 3
     }
     if (x == 122 && y == 115) { // Top Left of ladder 2
       myGLCD.drawBitmap (136, 142, 34, 17, DK_scaffold); //   Scaffold above ladder 2
