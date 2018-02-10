@@ -1,7 +1,7 @@
 # Arduino Mega Donkey Kong Clock
 ![Client Photo](https://github.com/bonnette/DK_Clock/blob/master/dk_clock.jpg)
 <br/>
-### There are more photos and information in the WIKI section of this repository
+### There will be more photos and information in the WIKI section of this repository
 <br/>
 
 This is modification of code from an Instructable by TechKiwiGadgets https://www.instructables.com/id/Retro-Pac-Man-Clock/
