@@ -228,11 +228,11 @@ void loop() {
       myGLCD.setColor(237, 28, 36);
       myGLCD.setBackColor(0, 0, 0);
 
-      myGLCD.print("DK", 24, 168); //
-      myGLCD.printNumI(bscore, 36, 168, 3); //
+      myGLCD.print("DK", 24, 160); 
+      myGLCD.printNumI(bscore, 36, 160, 3);
 
-      myGLCD.print("M", 224, 168); //
-      myGLCD.printNumI(mscore, 236, 168, 3); //
+      myGLCD.print("M", 204, 160); 
+      myGLCD.printNumI(mscore, 216, 160, 3); 
 
       delay(3000);  // Delay then reset the game
       bscore = 0;
@@ -292,11 +292,11 @@ void loop() {
     myGLCD.setColor(237, 28, 36);
     myGLCD.setBackColor(0, 0, 0);
 
-    myGLCD.print("DK", 24, 168); //
-    myGLCD.printNumI(bscore, 36, 168, 3); //
+    myGLCD.print("DK", 24, 160); //
+    myGLCD.printNumI(bscore, 36, 160, 3); //
 
-    myGLCD.print("M", 224, 168); //
-    myGLCD.printNumI(mscore, 236, 168, 3); //
+    myGLCD.print("M", 204, 160); //
+    myGLCD.printNumI(mscore, 216, 160, 3); //
   }
 
   // Read the current date and time from the RTC and reset board
@@ -450,7 +450,7 @@ void loop() {
   // ************************************************************************************************
   // Mario Scoring for jumping Barrell
 
-  if (jumptrigger == true) { //If during  a Jump over a Barrel if there is not a collision then increment the Mario Points counter by 5
+  if (jumptrigger == false) { //If during  a Jump over a Barrel if there is not a collision then increment the Mario Points counter by 5 Larry Mod to false
 
     if ((b1X - mX >= 4) && (b1X - mX <= 8) && (b1Y - (mY + jumpA) <= 40) && (b1Y - (mY + jumpA) >= 0)) {
       mscore = mscore + 5;
