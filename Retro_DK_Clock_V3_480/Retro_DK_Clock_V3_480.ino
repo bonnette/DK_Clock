@@ -1880,7 +1880,7 @@ void loop() {
 
   if (monkeygraphic == Barreldelay * 5) {
     
-/*      // trigger off the next Barrel
+      // trigger off the next Barrel
       if ((triggerbarrel1 == false) && (b1X == 42)&&(b1Y == 74)){
         triggerbarrel1 = true;
       }  else
@@ -1893,7 +1893,7 @@ void loop() {
         if ((triggerbarrel4 == false) && (b4X == 42)&&(b4Y == 74)){
         triggerbarrel4 = true;
       }
-  */    
+      
     if ((triggerbarrel1 == false) || (triggerbarrel2 == false) || (triggerbarrel3 == false) || (triggerbarrel4 == false))  { // Only display Monkey with Barrel if less than 3 barrels in play
       myGLCD.drawBitmap (27, 53, 45, 32, MonkeyBarrel); //   MonkeyBarrel graphic
     }
