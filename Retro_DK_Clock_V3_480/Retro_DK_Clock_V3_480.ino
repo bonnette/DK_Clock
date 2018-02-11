@@ -1,6 +1,8 @@
 /*  Arduino DK Clock Project
   V3 - Bug fixed where when reachs 95 mX value not reset to start. Reset Jump issue resolved.
-  This version of code was modified by Larry Bonnette to enable the use of a non-touch capable TFT with 480 X 320 resolution
+ *****************************************************
+ *Modified by Larry Bonnette for use with a non touch capable 480X320 TFT
+ *****************************************************
 */
 
 #include <UTFT.h>
