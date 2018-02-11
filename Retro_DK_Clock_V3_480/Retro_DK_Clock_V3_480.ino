@@ -231,8 +231,8 @@ void loop() {
       myGLCD.print("DK", 24, 160); 
       myGLCD.printNumI(bscore, 36, 160, 3);
 
-      myGLCD.print("M", 204, 160); 
-      myGLCD.printNumI(mscore, 216, 160, 3); 
+      myGLCD.print("M", 200, 160); 
+      myGLCD.printNumI(mscore, 212, 160, 3); 
 
       delay(3000);  // Delay then reset the game
       bscore = 0;
@@ -295,8 +295,8 @@ void loop() {
     myGLCD.print("DK", 24, 160); //
     myGLCD.printNumI(bscore, 36, 160, 3); //
 
-    myGLCD.print("M", 204, 160); //
-    myGLCD.printNumI(mscore, 216, 160, 3); //
+    myGLCD.print("M", 200, 160); //
+    myGLCD.printNumI(mscore, 212, 160, 3); //
   }
 
   // Read the current date and time from the RTC and reset board
@@ -2134,7 +2134,7 @@ void UpdateDisp() {
 
   //    myGLCD.setColor(1, 73, 240);
   myGLCD.setBackColor(0, 0, 0);
-  myGLCD.setFont(SmallFont);
+  myGLCD.setFont(BigFont);
   if (pm == 0) {
     myGLCD.print("am", 440, 22);
   } else {
