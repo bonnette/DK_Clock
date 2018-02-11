@@ -1,5 +1,5 @@
 # Arduino Mega Donkey Kong Clock
-![Client Photo](https://github.com/bonnette/DK_Clock/blob/master/dk_clock.jpg)
+![Client Photo](https://github.com/bonnette/DK_Clock/blob/master/photos/dk_clock.jpg)
 <br/>
 ### There will be more photos and information in the WIKI section of this repository
 <br/>
