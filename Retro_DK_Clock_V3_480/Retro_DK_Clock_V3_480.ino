@@ -2116,7 +2116,7 @@ void UpdateDisp() {
 
   // First Digit
   if (((d1 != c1) || (xsetup == true)) && (d1 != 0)) { // Do not print zero in first digit position
-    myGLCD.printNumI(d1, 154, 0); // Printing thisnumber impacts LFH walls so redraw impacted area
+    myGLCD.printNumI(d1, 154, 10); // Printing thisnumber impacts LFH walls so redraw impacted area
 
     // ---------------- Clear lines on Outside wall
     //    myGLCD.setColor(0,0,0);
@@ -2129,7 +2129,7 @@ void UpdateDisp() {
   if ((c1 == 1) && (c2 == 2) && (c3 == 5) && (c4 == 9) && (d2 != c2) ) { // Clear the previouis First Digit and redraw wall
 
     myGLCD.setColor(0, 0, 0);
-    myGLCD.fillRect(54, 0, 118, 100);
+    myGLCD.fillRect(215, 10, 180, 100);
 
 
   }
@@ -2137,7 +2137,7 @@ void UpdateDisp() {
   if ((c1 == 0) && (c2 == 0) && (c3 == 5) && (c4 == 9) && (d2 != c2) ) { // Clear the previouis First Digit and redraw wall
 
     myGLCD.setColor(0, 0, 0);
-    myGLCD.fillRect(54, 0, 118, 100);
+    myGLCD.fillRect(215, 10, 180, 100);
   }
   myGLCD.setColor(255, 255, 255);
   myGLCD.setBackColor(0, 0, 0);
@@ -2145,17 +2145,17 @@ void UpdateDisp() {
 
   // Second Digit
   if ((d2 != c2) || (xsetup == true)) {
-    myGLCD.printNumI(d2, 221, 0); // Print 0
+    myGLCD.printNumI(d2, 221, 10); // Print 0
   }
 
   // Third Digit
   if ((d3 != c3) || (xsetup == true)) {
-    myGLCD.printNumI(d3, 288, 0); // Was 145
+    myGLCD.printNumI(d3, 288, 10); // Was 145
   }
 
   // Fourth Digit
   if ((d4 != c4) || (xsetup == true)) {
-    myGLCD.printNumI(d4, 355, 0); // Was 205
+    myGLCD.printNumI(d4, 355, 10); // Was 205
   }
 
   if (xsetup == true) {
@@ -2182,8 +2182,8 @@ void UpdateDisp() {
   myGLCD.setColor(255, 255, 255);
   myGLCD.setBackColor(0, 0, 0);
 
-  myGLCD.fillRect(283, 26, 288, 35);
-  myGLCD.fillRect(283, 65, 288, 74);
+  myGLCD.fillRect(283, 36, 288, 45);
+  myGLCD.fillRect(283, 75, 288, 84);
 
   // Cover any blanks caused by digits
 
