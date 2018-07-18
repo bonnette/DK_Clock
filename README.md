@@ -5,7 +5,8 @@
 <br/>
 
 This is modification of code from an Instructable by TechKiwiGadgets https://www.instructables.com/id/Retro-Pac-Man-Clock/
-The purpose of the modification is to adapt the design to work with an HX8357C 480X320 TFT display.
+The purpose of the modification is to adapt the design to work with an HX8357C 480X320 TFT display.<br/>(https://www.amazon.com/gp/product/B073R7Q8FF/ref=oh_aui_search_detailpage?ie=UTF8&psc=1).<br/>
+And arduino Mega (https://www.amazon.com/gp/product/B01H4ZLZLQ/ref=oh_aui_search_detailpage?ie=UTF8&psc=1).
 Additionally, because the display is not a touch display. Code has been added to use physical buttons to allow the time to be set on the clock.
 <br />
 The above photo is the clock in a 3d printed case. The case can be found on Thingiverse.com.<br/>
