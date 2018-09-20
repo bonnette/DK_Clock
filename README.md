@@ -12,4 +12,9 @@ Additionally, because the display is not a touch display. Code has been added to
 The above photo is the clock in a 3d printed case. The case can be found on Thingiverse.com.<br/>
 https://www.thingiverse.com/thing:2790349
 <br /></br>
-There is a new version (V4) of the arduino code that makes Mario jump over the barrels. Mario also always goes up the ladder on level 4 in order to win the game.  
+There is a new version (V4) of the arduino code that makes Mario jump over the barrels. Mario also always goes up the ladder on level 4 in order to win the game.
+</br></br>
+# Added Retro Arcade Game Clock</br>
+Thanks again to Instructables and "TechKiwiGadgets" for his addition of an Arcade Game Clock (https://www.instructables.com/id/Retro-Arcade-Clock-Arduino/)</br>
+I modified his code to work with the HiLetGo (ILI9486) 480X320 TFT display.</br></br>
+![Client Photo](https://github.com/bonnette/DK_Clock/blob/master/photos/retro_game_clock.jpg)
