@@ -587,7 +587,7 @@ if (h>=12){ // Set
   
 // First Digit
 if(((d1 != c1)||(xsetup == true))&&(d1 != 0)){ // Do not print zero in first digit position
-    myGLCD.printNumI(d1,40,105); // Printing this number impacts LFH walls so redraw impacted area   
+    myGLCD.printNumI(d1,45,105); // Printing this number impacts LFH walls so redraw impacted area   
 
 // ---------------- Clear lines on Outside wall
     myGLCD.setColor(0,0,0);
@@ -643,14 +643,14 @@ if (xsetup == true){
       myGLCD.setBackColor(0, 0, 0);
       myGLCD.setFont(BigFont);
   if (pm == 0) {
-      myGLCD.print("AM", 330, 167); 
+      myGLCD.print((char *)"AM", 330, 167); 
    } else {
-      myGLCD.print("PM", 330, 167);  
+      myGLCD.print((char *)"PM", 330, 167);  
    }
 
 // ----------- Alarm Set on LHS lower pillar
 if (alarmstatus == true) { // Print AS on fron screenleft hand side
-      myGLCD.print("AS", 7, 147); 
+      myGLCD.print((char *)"AS", 7, 147); 
 }
 
 
@@ -753,8 +753,8 @@ screenPressed = false;
     myGLCD.setFont(BigFont);
 
     // Time Set buttons
-    myGLCD.print("+  +", 135, 38); 
-    myGLCD.print("-  -", 135, 82);
+    myGLCD.print((char *)"+  +", 135, 38); 
+    myGLCD.print((char *)"-  -", 135, 82);
     myGLCD.drawRoundRect(132, 35, 152, 55); // time hour +
     myGLCD.drawRoundRect(180, 35, 200, 55); // time minute +
     
@@ -762,8 +762,8 @@ screenPressed = false;
     myGLCD.drawRoundRect(180, 80, 200, 100); // time minute -   
 
     // Alarm Set buttons
-    myGLCD.print("+  +", 135, 138); 
-    myGLCD.print("-  -", 135, 182);
+    myGLCD.print((char *)"+  +", 135, 138); 
+    myGLCD.print((char *)"-  -", 135, 182);
     myGLCD.drawRoundRect(132, 135, 152, 155); // alarm hour +
     myGLCD.drawRoundRect(180, 135, 200, 155); // alarm minute +
 
@@ -773,8 +773,8 @@ screenPressed = false;
 
 
     
-    myGLCD.print("SAVE", 13, 213);
-    myGLCD.print("EXIT", 245, 213);    
+    myGLCD.print((char *)"SAVE", 13, 213);
+    myGLCD.print((char *)"EXIT", 245, 213);    
     myGLCD.drawRoundRect(10, 210, 80, 230);
     myGLCD.drawRoundRect(243, 210, 310, 230);  
 
@@ -789,61 +789,61 @@ while (xsetup == true){
     
 
    if (alarmstatus == true){ // flag where false is off and true is on
-    myGLCD.print("SET", 220, 160);
+    myGLCD.print((char *)"SET", 220, 160);
  } else {
-    myGLCD.print("OFF", 220, 160);
+    myGLCD.print((char *)"OFF", 220, 160);
  }   
     myGLCD.drawRoundRect(218, 157, 268, 177);
 
 // Draw Sound Button
 
-    myGLCD.print("TEST", 50, 110);  // Triggers alarm sound
+    myGLCD.print((char *)"TEST", 50, 110);  // Triggers alarm sound
     myGLCD.drawRoundRect(48, 108, 116, 128);    
 
 // Display Current Time
    
-    myGLCD.print("Time", 40, 60);    
+    myGLCD.print((char *)"Time", 40, 60);    
 
 
 //    myGLCD.printNumI(timehour, 130, 60); 
  if(timehour>=10){ // Annoyingly if number less than 10 doesnt print on RHS and misses zero so need to compensate
       myGLCD.printNumI(timehour, 130, 60);   // If >= 10 just print minute
       } else {
-      myGLCD.print("0", 130, 60);
+      myGLCD.print((char *)"0", 130, 60);
       myGLCD.printNumI(timehour, 146, 60);      
       } 
 
-    myGLCD.print(":", 160, 60);       
+    myGLCD.print((char *)":", 160, 60);       
 
  if(timeminute>=10){ // Annoyingly if number less than 10 doesnt print on RHS and misses zero so need to compensate
       myGLCD.printNumI(timeminute, 175, 60);   // If >= 10 just print minute
       } else {
-      myGLCD.print("0", 175, 60);
+      myGLCD.print((char *)"0", 175, 60);
       myGLCD.printNumI(timeminute, 193, 60);      
       } 
       
    
 //Display Current Alarm Setting
    
-    myGLCD.print("Alarm", 40, 160);    
+    myGLCD.print((char *)"Alarm", 40, 160);    
 
 
 //    myGLCD.printNumI(alarmhour, 130, 160); 
  if(alarmhour>=10){ // Annoyingly if number less than 10 doesnt print on RHS and misses zero so need to compensate
       myGLCD.printNumI(alarmhour, 130, 160);   // If >= 10 just print minute
       } else {
-      myGLCD.print("0", 130, 160);
+      myGLCD.print((char *)"0", 130, 160);
       myGLCD.printNumI(alarmhour, 146, 160);      
       } 
 
 
 
-    myGLCD.print(":", 160, 160);       
+    myGLCD.print((char *)":", 160, 160);       
 
  if(alarmminute>=10){ // Annoyingly if number less than 10 doesnt print on RHS and misses zero so need to compensate
       myGLCD.printNumI(alarmminute, 175, 160);   // If >= 10 just print minute
       } else {
-      myGLCD.print("0", 175, 160);
+      myGLCD.print((char *)"0", 175, 160);
       myGLCD.printNumI(alarmminute, 193, 160);      
       }    
 
@@ -977,7 +977,7 @@ if ( savetimealarm == true) {
      //* Clear Screen
       myGLCD.setColor(0, 0, 0); 
       myGLCD.setBackColor(0, 0, 0);
-      myGLCD.fillRect(0,239,319,0);
+      myGLCD.fillRect(0,319,479,0);
      xsetup = true; // Set Flag now leaving setup mode in order to draw Clock Digits 
      setSyncProvider(RTC.get);   // the function to get the time from the RTC
      setSyncInterval(60); // sync the time every 60 seconds (1 minutes)
@@ -1197,7 +1197,15 @@ void drawMonkey(int x, int y, int d, int p) {
    myGLCD.fillRect(x, y-3, x+40, y); // Clear trail off graphic before printing new position 
 
    // draw image
-   myGLCD.drawBitmap (MonkeyX, MonkeyY, 40, 40, Monkey3); 
+      if (p==0) {    
+   myGLCD.drawBitmap (MonkeyX, MonkeyY, 40, 40, Monkey2); 
+         } else if (p==1) {
+   myGLCD.drawBitmap (MonkeyX, MonkeyY, 40, 40, Monkey2);           
+        } else if (p==2) {
+   myGLCD.drawBitmap (MonkeyX, MonkeyY, 40, 40, Monkey3);            
+        }else {
+   myGLCD.drawBitmap (MonkeyX, MonkeyY, 40, 40, Monkey3);      
+        } 
 
    } else  if ( d == 2){ // Left
 
@@ -1220,7 +1228,15 @@ void drawMonkey(int x, int y, int d, int p) {
    myGLCD.fillRect(x, y+43, x+40, y+40); // Clear trail off graphic before printing new position
 
    // draw image
-   myGLCD.drawBitmap (MonkeyX, MonkeyY, 40, 40, Monkey3); 
+      if (p==0) {    
+   myGLCD.drawBitmap (MonkeyX, MonkeyY, 40, 40, Monkey2); 
+         } else if (p==1) {
+   myGLCD.drawBitmap (MonkeyX, MonkeyY, 40, 40, Monkey2);           
+        } else if (p==2) {
+   myGLCD.drawBitmap (MonkeyX, MonkeyY, 40, 40, Monkey3);            
+        }else {
+   myGLCD.drawBitmap (MonkeyX, MonkeyY, 40, 40, Monkey3);      
+        }  
 
   }
   
