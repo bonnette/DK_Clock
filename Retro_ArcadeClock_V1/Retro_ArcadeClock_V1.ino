@@ -68,7 +68,8 @@ int LDR = 100; // LDR variable measured directly from Analog 7
 
 
 //==== Creating Objects
-UTFT    myGLCD(ILI9486,38,39,40,41); //Parameters should be adjusted to your Display/Schield model
+//UTFT    myGLCD(ILI9486,38,39,40,41); //Parameters should be adjusted to your Display/Schield model
+UTFT myGLCD(ILI9481,38,39,40,41); //Parameters should be adjusted to your Display/Schield model
 URTouch  myTouch( 6, 5, 4, 3, 2);
 
 //==== Defining Fonts
@@ -587,7 +588,7 @@ if (h>=12){ // Set
   
 // First Digit
 if(((d1 != c1)||(xsetup == true))&&(d1 != 0)){ // Do not print zero in first digit position
-    myGLCD.printNumI(d1,45,105); // Printing this number impacts LFH walls so redraw impacted area   
+    myGLCD.printNumI(d1,55,105); // Printing this number impacts LFH walls so redraw impacted area   
 
 // ---------------- Clear lines on Outside wall
     myGLCD.setColor(0,0,0);
@@ -621,17 +622,17 @@ if((c1 == 0) && (c2 == 0) && (c3 == 5) && (c4 == 9) && (d2 != c2) ){ // Clear th
   
 // Second Digit
 if((d2 != c2)||(xsetup == true)){
-  myGLCD.printNumI(d2,120,105); // Print 0
+  myGLCD.printNumI(d2,130,105); // Print 0
 }
 
 // Third Digit
 if((d3 != c3)||(xsetup == true)){
-  myGLCD.printNumI(d3,203,105); // Was 145    
+  myGLCD.printNumI(d3,213,105); // Was 145    
 }
 
 // Fourth Digit
 if((d4 != c4)||(xsetup == true)){
-  myGLCD.printNumI(d4,264,105); // Was 205  
+  myGLCD.printNumI(d4,274,105); // Was 205  
 }
 
 if (xsetup == true){
@@ -643,9 +644,9 @@ if (xsetup == true){
       myGLCD.setBackColor(0, 0, 0);
       myGLCD.setFont(BigFont);
   if (pm == 0) {
-      myGLCD.print((char *)"AM", 330, 167); 
+      myGLCD.print((char *)"AM", 340, 167); 
    } else {
-      myGLCD.print((char *)"PM", 330, 167);  
+      myGLCD.print((char *)"PM", 340, 167);  
    }
 
 // ----------- Alarm Set on LHS lower pillar
@@ -658,8 +659,8 @@ if (alarmstatus == true) { // Print AS on fron screenleft hand side
 
   myGLCD.setColor(255, 255, 255);
   myGLCD.setBackColor(0, 0, 0);
-  myGLCD.fillCircle(191, 140, 5);
-  myGLCD.fillCircle(191, 170, 5);
+  myGLCD.fillCircle(198, 140, 5);
+  myGLCD.fillCircle(198, 170, 5);
 
 
 
