@@ -597,11 +597,19 @@ if(((d1 != c1)||(xsetup == true))&&(d1 != 0)){ // Do not print zero in first dig
 }
 
 //If prevous time 12:59 or 00:59 and change in time then blank First Digit
+/*Serial.print(c1);
+Serial.print(" ");
+Serial.print(c2);
+Serial.print(" ");
+Serial.print(c3);
+Serial.print(" ");
+Serial.print(c4);
+Serial.println(" ");*/
 
 if((c1 == 1) && (c2 == 2) && (c3 == 5) && (c4 == 9) && (d2 != c2) ){ // Clear the previouis First Digit and redraw wall
-
+//Serial.println("Got Here");
     myGLCD.setColor(0,0,0);
-    myGLCD.fillRect(50, 105, 100, 105);
+    myGLCD.fillRect(95, 105, 115, 195);
 
 
 }
@@ -609,7 +617,7 @@ if((c1 == 1) && (c2 == 2) && (c3 == 5) && (c4 == 9) && (d2 != c2) ){ // Clear th
 if((c1 == 0) && (c2 == 0) && (c3 == 5) && (c4 == 9) && (d2 != c2) ){ // Clear the previouis First Digit and redraw wall
 
     myGLCD.setColor(0,0,0);
-    myGLCD.fillRect(50, 100, 70, 165);
+    myGLCD.fillRect(95, 105, 115, 195);
 
 
 }
