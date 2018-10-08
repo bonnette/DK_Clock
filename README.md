@@ -18,4 +18,4 @@ There is a new version (V4) of the arduino code that makes Mario jump over the b
 Thanks again to Instructables and "TechKiwiGadgets" for his addition of an Arcade Game Clock (https://www.instructables.com/id/Retro-Arcade-Clock-Arduino/)</br>
 I modified his code to work with the HiLetGo (ILI9486) 480X320 TFT display.</br></br>
 ![Client Photo](https://github.com/bonnette/DK_Clock/blob/master/photos/retro_game_clock.jpg)</br>
-There is no alarm on this clock and I have not yet added the button code in order to set the time on the clock
+There is now code to set the clock with the buttons. I have not been able to make the large seven segment font to work.
