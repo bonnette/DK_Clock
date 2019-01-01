@@ -10,7 +10,9 @@ And arduino Mega (https://www.amazon.com/gp/product/B01H4ZLZLQ/ref=oh_aui_search
 Additionally, because the display is not a touch display. Code has been added to use physical buttons to allow the time to be set on the clock.
 <br />
 The above photo is the clock in a 3d printed case. The case can be found on Thingiverse.com.<br/>
-https://www.thingiverse.com/thing:2790349
+https://www.thingiverse.com/thing:2790349 <br/>
+There is a newer version of the case that can be found here:<br/>
+https://www.thingiverse.com/thing:3143466
 <br /></br>
 There is a new version (V4) of the arduino code that makes Mario jump over the barrels. Mario also always goes up the ladder on level 4 in order to win the game.
 </br></br>
